@@ -2,6 +2,8 @@
 
 People Photo Prompt Maker US is a browser-based prompt builder for US small businesses that need realistic people-centered marketing images for hiring, local customer acquisition, and consultation requests.
 
+Created by Akuta Mitora.
+
 It helps non-designers create structured, copy-ready prompts for image generators without having to understand prompt engineering, ad photography direction, or AI-specific image constraints.
 
 The interface is designed to feel clean, responsive, and practical: the user can scan the available choices, see the generated prompt immediately, and copy it without setup.
