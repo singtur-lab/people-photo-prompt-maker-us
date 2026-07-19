@@ -34,7 +34,7 @@ This project turns that into a simple guided workflow. The user starts with the 
 
 The app includes presets for hair salons, real estate agencies, medical clinics, professional services, tutoring centers, and home contractors. It also includes ChatGPT, Gemini, and Google Flow modes, with transparent-background and solid-background handling depending on the generator.
 
-The project is intentionally lightweight: a single static HTML file with no dependencies, no account, and no server. Judges can open the file directly in a browser and test the full workflow immediately.
+The project is intentionally lightweight: a single static HTML file with no dependencies, no account, and no server. Judges can open the file directly in a browser and test the full workflow immediately. The interface is clean, responsive, and focused on fast decision-making rather than prompt-engineering jargon.
 
 ## What It Does
 
@@ -43,6 +43,7 @@ The project is intentionally lightweight: a single static HTML file with no depe
 - Provides industry presets for common US local businesses.
 - Keeps risky text/logo generation out of the image and reminds users to add those elements later in a design tool.
 - Supports background-aware prompt modes for multiple image generators.
+- Provides a polished single-page interface with clear selected states, readable spacing, and mobile-friendly layout.
 
 ## How Codex And GPT-5.6 Were Used
 
@@ -60,7 +61,7 @@ Codex then helped design and implement the interface, write the US-focused prese
 - Industry presets are plain JavaScript objects
 - UI controls update the prompt live
 - Clipboard copy support
-- Basic responsive layout for desktop and mobile
+- Polished responsive layout for desktop and mobile
 
 ## Judge Testing Instructions
 
@@ -71,15 +72,21 @@ Codex then helped design and implement the interface, write the US-focused prese
 5. Toggle `Transparent Background` in ChatGPT mode, or switch to Gemini/Google Flow to see solid-background mode.
 6. Copy the generated prompt and use it in an image generator.
 
-## Required Devpost Fields Still Needed
+## Current Submission Links
 
-- Public or private code repository URL
-- Public YouTube or Vimeo demo video URL under 3 minutes
-- `/feedback` Codex Session ID
+- Code repository: https://github.com/singtur-lab/people-photo-prompt-maker-us
+- Devpost project: https://devpost.com/software/people-photo-prompt-maker-us
+- Current public demo video: https://www.youtube.com/watch?v=2LUXSL_33kE
+- Updated local demo video: `people-photo-prompt-maker-us-demo.mp4`
+- `/feedback` Codex Session ID: `019f7974-17fe-7dc3-ad51-be2dda74463f`
 
 ## Optional Judge Test Link
 
-If the project is hosted later with GitHub Pages or another static host, add that URL here.
+After the local GitHub Pages commits are pushed and Pages is enabled, the expected URL is:
+
+```text
+https://singtur-lab.github.io/people-photo-prompt-maker-us/
+```
 
 ## Submission Form Answers
 
@@ -90,17 +97,17 @@ Use these values for the OpenAI Build Week custom submission fields.
 | 27945 | Submitter Type | Individual |
 | 27946 | Country of Residence | Japan |
 | 27947 | Category | Work & Productivity |
-| 27948 | Code repository URL | TODO: add GitHub repository URL |
-| 27949 | Project test link and instructions | Open `index.html` directly in a browser. No credentials, server, or build step required. If a hosted URL is added later, include it here. |
-| 27950 | `/feedback` Session ID | TODO: add Codex `/feedback` session ID |
+| 27948 | Code repository URL | https://github.com/singtur-lab/people-photo-prompt-maker-us |
+| 27949 | Project test link and instructions | Open `index.html` directly in a browser. No credentials, server, or build step required. If GitHub Pages is enabled, use `https://singtur-lab.github.io/people-photo-prompt-maker-us/`. |
+| 27950 | `/feedback` Session ID | `019f7974-17fe-7dc3-ad51-be2dda74463f` |
 | 27951 | Plugin/dev tool instructions | Not applicable. This is a static browser app, not a plugin or developer tool. |
 
 ## Demo Video
 
-Local MP4 prepared:
+Updated local MP4 prepared:
 
 ```text
 people-photo-prompt-maker-us-demo.mp4
 ```
 
-Upload this video to YouTube or Vimeo as a public video, then paste that URL into Devpost.
+Upload this updated video to YouTube or Vimeo as a public video, then replace the current Devpost demo video URL if desired.

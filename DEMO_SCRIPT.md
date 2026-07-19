@@ -1,6 +1,6 @@
 # Demo Video Script
 
-Target length: 2 minutes 15 seconds to 2 minutes 45 seconds.
+Generated video length: about 2 minutes 3 seconds.
 
 Devpost requires a public YouTube video under 3 minutes with audio explaining how Codex and GPT-5.6 were used.
 

@@ -4,6 +4,8 @@ People Photo Prompt Maker US is a browser-based prompt builder for US small busi
 
 It helps non-designers create structured, copy-ready prompts for image generators without having to understand prompt engineering, ad photography direction, or AI-specific image constraints.
 
+The interface is designed to feel clean, responsive, and practical: the user can scan the available choices, see the generated prompt immediately, and copy it without setup.
+
 ## Why This Exists
 
 Small businesses often need trustworthy people photos for flyers, social posts, hiring campaigns, and local service pages. But prompt writing is hard when the owner has to decide the audience, business context, subject, background, aspect ratio, photo style, and generator-specific constraints all at once.
@@ -30,6 +32,7 @@ This tool turns that work into a guided workflow:
 - Generator-aware background handling for ChatGPT, Gemini, and Google Flow
 - Transparent-background mode for subject-only cutout prompts
 - Solid-background mode for generators where a flat background is easier to control
+- Polished responsive interface for desktop and mobile use
 - Copy-ready prompt output
 - No build step, no server, no dependencies
 
@@ -91,6 +94,7 @@ Codex and GPT-5.6 were used as the primary product-building partner for the proj
 - Created English-first industry presets and prompt language for the US market.
 - Implemented the standalone HTML/CSS/JavaScript app.
 - Added generator-aware decisions for transparent backgrounds and solid-background control.
+- Refined the visual design into a cleaner, more focused interface with stronger selected states and mobile-friendly layout.
 - Wrote submission-ready project documentation and demo materials.
 - Validated that the app is dependency-free and can be run by judges from a static file.
 
@@ -100,6 +104,7 @@ Codex and GPT-5.6 were used as the primary product-building partner for the proj
 - The prompt starts with the business goal because small businesses care about the marketing outcome, not prompt mechanics.
 - Presets are intentionally practical and local: hiring, direct mail, Facebook/Instagram, consultations, and storefront trust.
 - The app runs as a static file so judges and small business users can test it immediately.
+- The interface avoids decorative complexity and uses clear selected states, readable spacing, and responsive layout so the workflow stays fast.
 
 ## Devpost Track
 

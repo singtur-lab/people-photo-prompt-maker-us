@@ -160,23 +160,27 @@ def wrap(draw, text, font_obj, width):
 
 
 def make_frame(scene, shot):
-    canvas = Image.new("RGB", (1920, 1080), "#fbf8f1")
+    canvas = Image.new("RGB", (1920, 1080), "#f5f5f7")
     shot_img = Image.open(shot).convert("RGB")
     shot_img.thumbnail((1320, 920), Image.Resampling.LANCZOS)
     sx = 560
     sy = 82
     canvas.paste(shot_img, (sx, sy))
     draw = ImageDraw.Draw(canvas)
-    draw.rounded_rectangle((48, 60, 514, 1020), radius=34, fill="#153139")
-    draw.rectangle((514, 60, 560, 1020), fill="#d96f48")
-    draw.text((86, 112), scene["title"], fill="#fffdfa", font=font(50, bold=True))
+    draw.rounded_rectangle((48, 60, 514, 1020), radius=34, fill="#1d1d1f")
+    draw.rectangle((514, 60, 560, 1020), fill="#007aff")
+    title_font = font(44, bold=True)
+    title_y = 112
+    for line in wrap(draw, scene["title"], title_font, 380):
+        draw.text((86, title_y), line, fill="#fbfbfd", font=title_font)
+        title_y += 54
     body_font = font(29)
-    y = 250
+    y = max(250, title_y + 56)
     for line in wrap(draw, scene["body"], body_font, 360):
-        draw.text((88, y), line, fill="#dce9e6", font=body_font)
+        draw.text((88, y), line, fill="#e8e8ed", font=body_font)
         y += 43
-    draw.text((88, 892), "OpenAI Build Week", fill="#f9cdb5", font=font(26, bold=True))
-    draw.text((88, 935), "Codex + GPT-5.6", fill="#f9cdb5", font=font(26, bold=True))
+    draw.text((88, 892), "OpenAI Build Week", fill="#9dccff", font=font(26, bold=True))
+    draw.text((88, 935), "Codex + GPT-5.6", fill="#9dccff", font=font(26, bold=True))
     frame = FRAMES / f"{scene['name']}.png"
     canvas.save(frame, quality=95)
     return frame
