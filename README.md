@@ -6,6 +6,10 @@ It helps non-designers create structured, copy-ready prompts for image generator
 
 The interface is designed to feel clean, responsive, and practical: the user can scan the available choices, see the generated prompt immediately, and copy it without setup.
 
+## Live Demo
+
+https://singtur-lab.github.io/people-photo-prompt-maker-us/
+
 ## Why This Exists
 
 Small businesses often need trustworthy people photos for flyers, social posts, hiring campaigns, and local service pages. But prompt writing is hard when the owner has to decide the audience, business context, subject, background, aspect ratio, photo style, and generator-specific constraints all at once.
