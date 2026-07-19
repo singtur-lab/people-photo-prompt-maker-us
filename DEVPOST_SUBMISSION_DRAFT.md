@@ -80,3 +80,27 @@ Codex then helped design and implement the interface, write the US-focused prese
 ## Optional Judge Test Link
 
 If the project is hosted later with GitHub Pages or another static host, add that URL here.
+
+## Submission Form Answers
+
+Use these values for the OpenAI Build Week custom submission fields.
+
+| Field ID | Label | Value |
+|---:|---|---|
+| 27945 | Submitter Type | Individual |
+| 27946 | Country of Residence | Japan |
+| 27947 | Category | Work & Productivity |
+| 27948 | Code repository URL | TODO: add GitHub repository URL |
+| 27949 | Project test link and instructions | Open `index.html` directly in a browser. No credentials, server, or build step required. If a hosted URL is added later, include it here. |
+| 27950 | `/feedback` Session ID | TODO: add Codex `/feedback` session ID |
+| 27951 | Plugin/dev tool instructions | Not applicable. This is a static browser app, not a plugin or developer tool. |
+
+## Demo Video
+
+Local MP4 prepared:
+
+```text
+people-photo-prompt-maker-us-demo.mp4
+```
+
+Upload this video to YouTube or Vimeo as a public video, then paste that URL into Devpost.
