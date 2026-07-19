@@ -76,7 +76,7 @@ Codex then helped design and implement the interface, write the US-focused prese
 
 - Code repository: https://github.com/singtur-lab/people-photo-prompt-maker-us
 - Devpost project: https://devpost.com/software/people-photo-prompt-maker-us
-- Current public demo video: https://www.youtube.com/watch?v=2LUXSL_33kE
+- Current public demo video: https://www.youtube.com/watch?v=CEwEI-hjw7o
 - Updated local demo video: `people-photo-prompt-maker-us-demo.mp4`
 - `/feedback` Codex Session ID: `019f7974-17fe-7dc3-ad51-be2dda74463f`
 
@@ -110,4 +110,8 @@ Updated local MP4 prepared:
 people-photo-prompt-maker-us-demo.mp4
 ```
 
-Upload this updated video to YouTube or Vimeo as a public video, then replace the current Devpost demo video URL if desired.
+Uploaded public YouTube demo:
+
+```text
+https://www.youtube.com/watch?v=CEwEI-hjw7o
+```
