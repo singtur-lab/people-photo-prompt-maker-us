@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sample Gallery | People Photo AI Prompt Maker</title>
+    <style>
+      :root {
+        --ink:#1d1d1f;
+        --muted:#6e6e73;
+        --line:rgba(60,60,67,.16);
+        --card:rgba(255,255,255,.74);
+        --teal:#007aff;
+        --teal-deep:#0057d9;
+        --orange:#ff8a3d;
+        --shadow-lg:0 28px 70px rgba(29,29,31,.12);
+        --shadow-sm:0 8px 18px rgba(29,29,31,.07);
+      }
+      * { box-sizing:border-box; }
+      body {
+        margin:0;
+        min-height:100vh;
+        color:var(--ink);
+        font-family:Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background:linear-gradient(145deg, #fbfbfd 0%, #f5f5f7 48%, #f2f7ff 100%);
+      }
+      body::before {
+        content:"";
+        position:fixed;
+        inset:0;
+        pointer-events:none;
+        background:linear-gradient(180deg, rgba(255,255,255,.55), rgba(255,255,255,.08));
+      }
+      .app { position:relative; width:min(1180px,calc(100% - 28px)); margin:14px auto 28px; }
+      .hero,.card {
+        border:1px solid rgba(255,255,255,.74);
+        background:var(--card);
+        box-shadow:var(--shadow-lg);
+        border-radius:26px;
+        backdrop-filter:blur(22px) saturate(160%);
+        -webkit-backdrop-filter:blur(22px) saturate(160%);
+      }
+      .hero {
+        padding:24px 26px;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        gap:18px;
+      }
+      h1 { margin:0 0 7px; font-size:42px; line-height:1.05; letter-spacing:0; }
+      p { color:var(--muted); line-height:1.6; margin:0; }
+      a { color:var(--teal); }
+      .nav {
+        display:flex;
+        gap:9px;
+        flex-wrap:wrap;
+        justify-content:flex-end;
+      }
+      .pill {
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        border-radius:999px;
+        padding:9px 13px;
+        background:rgba(234,244,255,.88);
+        color:var(--teal);
+        font-size:13px;
+        font-weight:750;
+        text-decoration:none;
+        white-space:nowrap;
+        box-shadow:inset 0 1px 0 rgba(255,255,255,.8);
+      }
+      .grid {
+        display:grid;
+        grid-template-columns:repeat(2,minmax(0,1fr));
+        gap:14px;
+        margin-top:14px;
+      }
+      .card {
+        overflow:hidden;
+        box-shadow:var(--shadow-sm);
+      }
+      .media {
+        display:block;
+        width:100%;
+        aspect-ratio:4 / 3;
+        object-fit:cover;
+        background:#eef2f7;
+      }
+      .media.vertical { aspect-ratio:4 / 5; }
+      .body {
+        padding:17px;
+        display:grid;
+        gap:11px;
+      }
+      .top {
+        display:flex;
+        justify-content:space-between;
+        align-items:flex-start;
+        gap:12px;
+      }
+      h2 { margin:0; font-size:19px; line-height:1.18; }
+      .badge {
+        border-radius:999px;
+        padding:6px 9px;
+        color:#264766;
+        background:rgba(234,244,255,.82);
+        font-size:12px;
+        font-weight:750;
+        white-space:nowrap;
+      }
+      details {
+        border-top:1px solid var(--line);
+        padding-top:10px;
+      }
+      summary {
+        cursor:pointer;
+        color:var(--teal);
+        font-size:13px;
+        font-weight:760;
+      }
+      pre {
+        margin:10px 0 0;
+        max-height:320px;
+        overflow:auto;
+        white-space:pre-wrap;
+        word-break:break-word;
+        border-radius:16px;
+        padding:14px;
+        background:linear-gradient(180deg,#1f2937,#111827);
+        color:#f5f7fb;
+        line-height:1.75;
+        font-family:"SFMono-Regular",Consolas,monospace;
+        font-size:12px;
+      }
+      .featured { grid-column:1 / -1; }
+      .featured .media { aspect-ratio:16 / 9; }
+      .footer {
+        color:var(--muted);
+        font-size:12px;
+        padding:12px 4px;
+      }
+      @media (max-width:820px) {
+        .hero { align-items:flex-start; flex-direction:column; }
+        .nav { justify-content:flex-start; }
+        .grid { grid-template-columns:1fr; }
+        .featured { grid-column:auto; }
+        h1 { font-size:32px; }
+      }
+      @media (max-width:520px) {
+        .app { width:auto; margin:14px; }
+        .hero { padding:24px 22px; }
+        h1 { font-size:29px; }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="app">
+      <header class="hero">
+        <div>
+          <h1>Sample Gallery</h1>
+          <p>Generated examples from prompts created with People Photo AI Prompt Maker.</p>
+        </div>
+        <nav class="nav" aria-label="Page links">
+          <a class="pill" href="index.html">Back to Prompt Maker</a>
+          <a class="pill" href="SAMPLE_IMAGE_PROMPTS.md">Prompt Markdown</a>
+        </nav>
+      </header>
+
+      <section class="grid" aria-label="Generated sample images">
+        <article class="card featured">
+          <img class="media" src="sample-images/Real%20Estate%20Agency.png" alt="Real estate agent helping a family in a home living room" />
+          <div class="body">
+            <div class="top">
+              <h2>Real Estate Agency</h2>
+              <span class="badge">Customer inquiries</span>
+            </div>
+            <p>A family-focused consultation image for local real estate marketing.</p>
+            <details>
+              <summary>View prompt</summary>
+              <pre>Act as a professional advertising photo director for US small business marketing.
+Goal: increase new customer inquiries
+Channel: social media post for Facebook or Instagram
+People and location context: Americans in the United States
+Industry: real estate agency
+Audience: local families
+Main subject: agent helping a family
+People count and relationship: several people, staff and customer conversation
+Person detail: no gender specified
+Scene: comfortable home living room
+Framing and light: slightly wide composition, bright natural light
+Style: bright advertising photo
+Aspect ratio: 4:3 horizontal
+Do not include any text, numbers, logos, signs, trademarks, watermarks, or UI elements inside the image.
+Create a natural, trustworthy, high-quality people photo that works clearly as local advertising.</pre>
+            </details>
+          </div>
+        </article>
+
+        <article class="card featured">
+          <img class="media" src="sample-images/Home%20Contractor.png" alt="Friendly home contractor team at an active job site" />
+          <div class="body">
+            <div class="top">
+              <h2>Home Contractor</h2>
+              <span class="badge">Hiring</span>
+            </div>
+            <p>A team-oriented hiring image for a local contractor or construction business.</p>
+            <details>
+              <summary>View prompt</summary>
+              <pre>Act as a professional advertising photo director for US small business marketing.
+Goal: increase job applications
+Channel: social media post for Facebook or Instagram
+People and location context: Americans in the United States
+Industry: home contractor
+Audience: local job seekers
+Main subject: a friendly staff team
+People count and relationship: several people, team energy among coworkers
+Person detail: no gender specified
+Scene: active job site
+Framing and light: slightly wide composition, bright natural light
+Style: natural realistic photo
+Aspect ratio: 16:9 horizontal
+Do not include any text, numbers, logos, signs, trademarks, watermarks, or UI elements inside the image.
+Create a natural, trustworthy, high-quality people photo that works clearly as local advertising.</pre>
+            </details>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="media vertical" src="sample-images/Hair%20Salon.png" alt="Happy salon customer speaking with a stylist" />
+          <div class="body">
+            <div class="top">
+              <h2>Hair Salon</h2>
+              <span class="badge">Direct mail</span>
+            </div>
+            <p>A warm customer moment for salon flyers and local promotions.</p>
+            <details>
+              <summary>View prompt</summary>
+              <pre>Act as a professional advertising photo director for US small business marketing.
+Goal: increase new customer inquiries
+Channel: local direct mail flyer
+People and location context: Americans in the United States
+Industry: hair salon
+Audience: nearby new customers
+Main subject: a happy salon customer
+People count and relationship: one person, staff and customer conversation
+Person detail: no gender specified
+Scene: clean and welcoming salon interior
+Framing and light: upper body visible, bright natural light
+Style: bright advertising photo
+Aspect ratio: 4:5 vertical
+Do not include any text, numbers, logos, signs, trademarks, watermarks, or UI elements inside the image.
+Create a natural, trustworthy, high-quality people photo that works clearly as local advertising.</pre>
+            </details>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="media" src="sample-images/Professional%20Services%20Firm.png" alt="Professional advisor speaking with a client in an office" />
+          <div class="body">
+            <div class="top">
+              <h2>Professional Services Firm</h2>
+              <span class="badge">Consultation</span>
+            </div>
+            <p>A trustworthy consultation image for professional service marketing.</p>
+            <details>
+              <summary>View prompt</summary>
+              <pre>Act as a professional advertising photo director for US small business marketing.
+Goal: increase new customer inquiries
+Channel: social media post for Facebook or Instagram
+People and location context: Americans in the United States
+Industry: professional services firm
+Audience: local business owners and professionals
+Main subject: expert speaking with a client
+People count and relationship: two people, professional consultation with a client
+Person detail: no gender specified
+Scene: clean modern office
+Framing and light: upper body visible, bright natural light
+Style: natural realistic photo
+Aspect ratio: 4:3 horizontal
+Do not include any text, numbers, logos, signs, trademarks, watermarks, or UI elements inside the image.
+Create a natural, trustworthy, high-quality people photo that works clearly as local advertising.</pre>
+            </details>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="media vertical" src="sample-images/Medical%20Clinic.png" alt="Friendly clinical care team in a bright workplace" />
+          <div class="body">
+            <div class="top">
+              <h2>Medical Clinic</h2>
+              <span class="badge">Hiring</span>
+            </div>
+            <p>A clean team portrait for healthcare recruiting and trust-building.</p>
+            <details>
+              <summary>View prompt</summary>
+              <pre>Act as a professional advertising photo director for US small business marketing.
+Goal: increase job applications
+Channel: local direct mail flyer
+People and location context: Americans in the United States
+Industry: medical clinic
+Audience: local job seekers
+Main subject: a friendly clinical care team
+People count and relationship: several people, team energy among coworkers
+Person detail: no gender specified
+Scene: bright workplace
+Framing and light: upper body visible, clean white light
+Style: natural realistic photo
+Aspect ratio: 4:5 vertical
+Do not include any text, numbers, logos, signs, trademarks, watermarks, or UI elements inside the image.
+Create a natural, trustworthy, high-quality people photo that works clearly as local advertising.</pre>
+            </details>
+          </div>
+        </article>
+      </section>
+      <div class="footer">No text, logos, signs, watermarks, or brand marks are generated inside the images.</div>
+    </main>
+  </body>
+</html>

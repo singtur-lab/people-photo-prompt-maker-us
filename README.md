@@ -10,6 +10,10 @@ The interface is designed to feel clean, responsive, and practical: the user can
 
 https://singtur-lab.github.io/people-photo-prompt-maker-us/
 
+Sample gallery:
+
+https://singtur-lab.github.io/people-photo-prompt-maker-us/sample.html
+
 ## Why This Exists
 
 Small businesses often need trustworthy people photos for flyers, social posts, hiring campaigns, and local service pages. But prompt writing is hard when the owner has to decide the audience, business context, subject, background, aspect ratio, photo style, and generator-specific constraints all at once.

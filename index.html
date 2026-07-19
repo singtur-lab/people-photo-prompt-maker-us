@@ -53,6 +53,9 @@
       .hero p,.panel-head p { color:var(--muted); margin:0; line-height:1.6; }
       .hero p { max-width:760px; overflow-wrap:break-word; }
       .tag {
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
         border-radius:999px;
         padding:9px 13px;
         background:rgba(234,244,255,.88);
@@ -61,6 +64,17 @@
         font-weight:750;
         white-space:nowrap;
         box-shadow:inset 0 1px 0 rgba(255,255,255,.8);
+        text-decoration:none;
+      }
+      .tag:hover {
+        transform:translateY(-1px);
+        box-shadow:0 10px 20px rgba(0,122,255,.10), inset 0 1px 0 rgba(255,255,255,.8);
+      }
+      .hero-actions {
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:flex-end;
+        gap:9px;
       }
       .layout { display:grid; grid-template-columns:minmax(0,1.15fr) minmax(360px,.85fr); gap:14px; margin-top:14px; align-items:start; }
       .panel { overflow:hidden; min-width:0; }
@@ -200,6 +214,7 @@
         .layout { grid-template-columns:1fr; }
         .scroll { max-height:none; }
         .hero { align-items:flex-start; flex-direction:column; }
+        .hero-actions { justify-content:flex-start; }
         h1 { font-size:32px; }
         .summary { grid-template-columns:1fr; }
       }
@@ -223,7 +238,10 @@
           <h1>People Photo AI Prompt Maker</h1>
           <p>Build people-centered visuals for hiring, local customer acquisition, and consultation requests.</p>
         </div>
-        <span class="tag">Built for US small businesses</span>
+        <div class="hero-actions">
+          <a class="tag" href="sample.html">Sample Gallery</a>
+          <span class="tag">Built for US small businesses</span>
+        </div>
       </header>
       <section class="layout">
         <section class="panel">
