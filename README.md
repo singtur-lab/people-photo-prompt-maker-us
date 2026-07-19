@@ -60,7 +60,23 @@ Then open:
 http://localhost:8000
 ```
 
-## Example Output
+## Sample Generated Images
+
+These images were generated from prompts created with the app. They show how the same prompt structure can produce different people-centered marketing visuals by industry.
+
+| Real Estate Agency | Home Contractor |
+|---|---|
+| ![Real estate agency sample](sample-images/Real%20Estate%20Agency.png) | ![Home contractor sample](sample-images/Home%20Contractor.png) |
+
+| Hair Salon | Professional Services Firm |
+|---|---|
+| ![Hair salon sample](sample-images/Hair%20Salon.png) | ![Professional services firm sample](sample-images/Professional%20Services%20Firm.png) |
+
+| Medical Clinic |
+|---|
+| ![Medical clinic sample](sample-images/Medical%20Clinic.png) |
+
+## Example Prompt
 
 ```text
 Act as a professional advertising photo director for US small business marketing.

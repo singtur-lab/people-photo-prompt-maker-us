@@ -45,6 +45,22 @@ The project is intentionally lightweight: a single static HTML file with no depe
 - Supports background-aware prompt modes for multiple image generators.
 - Provides a polished single-page interface with clear selected states, readable spacing, and mobile-friendly layout.
 
+## Recommended Gallery Images
+
+Use these generated samples to show the practical output of the prompt maker. Recommended order:
+
+1. `sample-images/Real Estate Agency.png`
+2. `sample-images/Home Contractor.png`
+3. `sample-images/Hair Salon.png`
+4. `sample-images/Professional Services Firm.png`
+5. `sample-images/Medical Clinic.png`
+
+Suggested caption:
+
+```text
+Sample images generated from prompts created with People Photo Prompt Maker US. Each image uses the same structured prompt format, adjusted for a different US small-business industry.
+```
+
 ## How Codex And GPT-5.6 Were Used
 
 Codex and GPT-5.6 were used as the core product-building partner.
